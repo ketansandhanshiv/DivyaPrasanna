@@ -469,7 +469,6 @@ h6 {
   font-size: 21px;
   padding-bottom: 60px;
   color: #556877;
-  width: 50%;
 }
 
 /* Section with background
@@ -645,10 +644,22 @@ h6 {
   
   width: 100%;
   position: relative;
-  background: url("../img/KSJ04789 copy.jpg") center no-repeat;
+  /* background: url("../img/KSJ04789 copy.jpg") center no-repeat; */
   background-size: cover;
   padding: 600px 0 150px 0;
 }
+
+.footerClass {
+  /* padding: 60px 0;
+  background: #004a99; */
+  
+  width: 100%;
+  position: relative;
+  background: url("../img/KSJ04824Copy.jpg") center no-repeat;
+  background-size: cover;
+  padding: 0 0 300px 0;
+}
+
 
 #invitaionpatrika {
   /* padding: 60px 0;
@@ -658,9 +669,10 @@ h6 {
   position: relative;
   background: url("../img/invitationbackground.jpg") center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 600px 0 150px 0;
 }
-#invitation-msg {
+.invitation-msg {
   /* padding: 60px 0;
   background: #004a99; */
   
@@ -732,7 +744,7 @@ h6 {
 }
 
 .circularImagedivya{
-  background-image: url("../img/IMGL2541copy.jpg");
+  background-image: url("../img/CirculerPicDivya.jpeg");
   border-radius: 50%;
   padding: 50%;
   background-size: 100% 100%;
@@ -762,8 +774,10 @@ h6 {
   /* opacity: 0.7; */
   text-align: center;
   filter: alpha(opacity=50);
-  background-color: purple;
+  /* background-color: purple; */
 }
+
+
 .invitationpatrikaText{
   padding: 15px;
   position: relative;
@@ -796,6 +810,20 @@ label{
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 }
+.GlowingText{
+  text-align: center;
+  color: white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.GlowingTextb{
+  text-align: center;
+  color: white;
+  -webkit-animation: glowb 1s ease-in-out infinite alternate;
+  -moz-animation: glowb 1s ease-in-out infinite alternate;
+  animation: glowb 1s ease-in-out infinite alternate;
+}
 @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
@@ -806,6 +834,17 @@ label{
   }
 }
 
+@-webkit-keyframes glowb {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #007bff, 0 0 40px #007bff, 0 0 50px #007bff, 0 0 60px #007bff, 0 0 70px #007bff;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #62adfd, 0 0 40px #62adfd, 0 0 50px #62adfd, 0 0 60px #62adfd, 0 0 70px #62adfd, 0 0 80px #62adfd;
+  }
+}
+
+
 p {
   text-align: center;
   font-size: 60px;
@@ -813,11 +852,13 @@ p {
 }
 
 .bluepinkbackgroundimage{
-  background-image:url("../img/pinkbluebackground.jpg");
+  background-image:url("../img/introbackground.jpg");
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 1080px;
   background-color: black;
+  background-attachment: fixed;
 }
 
 .carousel .carousel-item {
@@ -828,24 +869,20 @@ p {
 }
 
 .carousel .carousel-item:first-of-type {
-  background-image: url("../img/IMGL2621.jpg");;
+  background-image: url("../img/IMGL2538copy.jpg");;
 }
 
 .carousel .carousel-item:nth-of-type(2) {
-  background-image: url("../img/IMGL2670.jpg");
+  background-image: url("../img/IMGL2701.jpg");
 }
-/* .carousel .carousel-item:nth-of-type(3) {
-  background-image:url("../img/KSJ04906.jpg");
+.carousel .carousel-item:nth-of-type(3) {
+  background-image:url("../img/KSJ04871copy.jpg");
 }
 .carousel .carousel-item:nth-of-type(4) {
-  background-image: url("../img/IMGL2759.jpg");
+  background-image: url("../img/IMGL2615.jpg");
 }
-.carousel .carousel-item:nth-of-type(5) {
-  background-image: url("../img/IMGL2605.jpg");
-} */
-
 .carousel .carousel-item:last-of-type {
-  background-image: url("../img/KSJ04871copy.jpg");
+  background-image: url("../img/KSJ04952_Copy.jpg");
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -1620,6 +1657,20 @@ p {
 @media (min-width: 992px) {
   #testimonials .testimonial-item p {
     width: 80%;
+  }
+  .counttime {
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    color: white;
+    /* opacity: 0.7; */
+    text-align: center;
+    filter: alpha(opacity=50);
+    background-color: purple;
   }
 }
 
