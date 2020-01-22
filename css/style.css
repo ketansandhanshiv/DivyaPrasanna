@@ -660,6 +660,23 @@ h6 {
   padding: 0 0 300px 0;
 }
 
+.heart {
+  background-image: url("../img/heart.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  top: 10px;
+}
+.white-line {
+  width: 60px;
+  height: 8px;
+  display: inline-block;
+  border-top: solid 2px #FFF;
+}
+
 
 #invitaionpatrika {
   /* padding: 60px 0;
